@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --blanco: #f0f0f0;
+    --rojo: #be3144;
+    --azul: #45567d;
+    --gris: #303841;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ---------------------------------------------------container----------------------------------------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+/* -----------------------------------------------------Navbar------------------------------------------------ */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--rojo);
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid rgba(34, 31, 31, 0.603);
+    padding: 0;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 5%;
+    padding: 0;
+    height: 100%;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+
+    text-decoration: none;
+    font-size: 1.4rem;
+    box-shadow: inset 0 0 0 0 var(--blanco);
+    color: var(--blanco);
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+nav ul a:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 var(--gris);;
+}
+
+/* -------------------------------------------------------- welcome section --------------------------------------- */
+
+.welcome-section {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section h1{
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+.welcome-section p{
+    color: var(--rojo);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------- projects section ------------------------------------------ */
+
+.projects {
+    background-color: var(--azul);
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.contenedor-titulo {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.projects h2 {
+    color: var(--blanco);
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    padding: 0 5%;
+}
+
+.projects .projects-grid a{
+    text-decoration: none;
+
+}
+
+.projects-grid p{
+    color: var(--blanco);
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+#botonsito {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.boton_container {
+    width: 145px;
+    height: 48px;
+    background-color: var(--gris);
+    margin: 0 auto;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.boton_container:hover {
+    background-color: var(--rojo);
+}
+
+.card {
+    background: var(--gris);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.card img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.contant-link {
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+
+/* --------------------------------------contact----------------------------------------------- */
+
+.contact {
+    background-color: var(--gris);
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1 {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.contact a{
+    margin: 0 20px;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+i {
+    margin: 0 7px;
+}
+
+@media (min-width:543px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
