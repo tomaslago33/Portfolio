@@ -36,6 +36,7 @@ nav {
     border-bottom: 2px solid rgba(34, 31, 31, 0.603);
     padding: 0;
     align-items: center;
+    z-index: 4;
 }
 
 nav ul {
@@ -91,11 +92,58 @@ nav ul a:hover {
     font-size: 1.8rem;
     font-weight: bold;
 }
+/* -----------------------------------------------------Skills section------------------------------------------------ */
+.skills{
+    background-color: var(--azul);
+    color: var(--blanco);
+    height: 100vh;
+}
 
+.skills h1{
+    text-align: center;
+}
+
+.skills span {
+    font-size: 1.5rem;
+}
+
+.skills h3{
+    font-size: 1.5rem;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.skills span i {
+    padding-bottom: 5px;
+}
+.porcentaje{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: #081921;
+    display: block;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.contendor-skills {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--blanco);
+    border-radius: 3px;
+}
 /* --------------------------------------------------------- projects section ------------------------------------------ */
 
 .projects {
-    background-color: var(--azul);
+    background-color: var(--gris);
     padding: 50px 0 50px 0;
     text-align: center;
 }
@@ -147,7 +195,7 @@ nav ul a:hover {
 .boton_container {
     width: 145px;
     height: 48px;
-    background-color: var(--gris);
+    background-color: var(--rojo);
     margin: 0 auto;
     border-radius: 3px;
     display: flex;
@@ -161,7 +209,7 @@ nav ul a:hover {
 }
 
 .card {
-    background: var(--gris);
+    background: var(--rojo);
     box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
     border-radius: 2px;
 }
@@ -180,7 +228,7 @@ nav ul a:hover {
 /* --------------------------------------contact----------------------------------------------- */
 
 .contact {
-    background-color: var(--gris);
+    background-color: var(--azul);
     padding: 80px 20px;
     display: flex;
     flex-direction: column;
